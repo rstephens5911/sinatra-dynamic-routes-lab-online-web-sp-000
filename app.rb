@@ -42,7 +42,9 @@ class App < Sinatra::Base
     when 'multiply'
       "#{@number1 * @number2}"
     when 'divide'
+      if @number1 != 0
       "#{@number1 / @number2}"
+    else "division by zero!"
     end
   end
 
