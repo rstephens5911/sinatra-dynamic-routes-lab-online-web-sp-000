@@ -44,6 +44,8 @@ class App < Sinatra::Base
       if @number1 != 0
         "#{@number1 / @number2}"
       else "division by zero!"
+      end
+    end
   end
 
 end
