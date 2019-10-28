@@ -36,11 +36,11 @@ class App < Sinatra::Base
 
     if @operation == "add"
       "#{@number1 + @number2}"
-    if @operation == "subtract"
+    elsif @operation == "subtract"
       "#{@number1 - @number2}"
-    if @operation == "multiply"
+    elsif @operation == "multiply"
       "#{@number1 * @number2}"
-    if @operation == "divide"
+    elsif @operation == "divide"
       if @number1 != 0
         "#{@number1 / @number2}"
       else "division by zero!"
